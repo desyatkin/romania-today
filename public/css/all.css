@@ -1,0 +1,15 @@
+.wrapper {
+	width: 970px;
+}
+
+
+#searchblock  input.searchInput{
+	margin:0;
+	padding:2px 10px 2px 10px;
+	color:#000;
+	font-size:11px;
+	height:15px;
+	width:190px;
+	background:#e3e3e3 url('/images/site/main/search_bg.png') left center no-repeat;
+	border:0;
+}
