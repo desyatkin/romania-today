@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Администрирование сайта mexico24.ru</title>
+    <title>Администрирование сайта romaina-today.ru.ru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{-- Bootstrap --}}
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen">

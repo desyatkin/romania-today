@@ -64,7 +64,9 @@
 
 		{{-- Подкатегория --}}
 		<td>
+			@if(isset($article->subcategory->category_name))
 			{{ $article->subcategory->category_name }}
+			@endif
 		</td>
 
 		{{-- Дата создания --}}

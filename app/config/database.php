@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'mexico24',
+			'database'  => 'romania_today',
 			'username'  => 'root',
 			'password'  => 'root',
 			'charset'   => 'utf8',
