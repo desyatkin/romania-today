@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'romania_today',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'toor',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

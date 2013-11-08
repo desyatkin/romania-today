@@ -53,6 +53,15 @@ Route::post('/login', function () {
 	}
 });
 
+// RSS
+Route::get('/rss.php', 'SiteController@getRSS');
+
+// Sitemap
+Route::get('/sitemap.xml', 'SiteController@getSitemap');
+
+// Redirects
+Route::get('redirects', 'SiteController@getRedirects');
+
 //------------------------------------------------------------------------------
 // Выход пользователя из системы
 //------------------------------------------------------------------------------
@@ -67,7 +76,6 @@ Route::get('/logout', function () {
 //------------------------------------------------------------------------------
 Route::get('/', 'SiteController@getShowIndex');
 
-
 //------------------------------------------------------------------------------
 // Категория сайта
 //------------------------------------------------------------------------------
@@ -77,18 +85,10 @@ Route::get('/{category}', 'SiteController@getShowCategory');
 //------------------------------------------------------------------------------
 // Подкатегории сайта
 //------------------------------------------------------------------------------
-Route::get('/{category}/{subcategory}', 'SiteController@getShowSubcategory');
+Route::get('/{category}/{subcategory}', 'SiteController@getShowCategory');
 
 
 //------------------------------------------------------------------------------
 //  Конечная страница со статьей
 //------------------------------------------------------------------------------
-Route::get('/{category}/{subcategory}/{alias}', 'SiteController@getShowArticle');
-
-
-
-
-
-
-
-
+Route::get('/{category}/{subcategory}/{year}/{month}/{day}/{alias}', 'SiteController@getShowArticle');
