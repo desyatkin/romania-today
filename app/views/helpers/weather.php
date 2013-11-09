@@ -41,7 +41,7 @@ function weather(){
 
     $imgId = '';
 
-    $xml = file_get_contents('http://informer.gismeteo.ru/xml/76680_1.xml');
+    $xml = file_get_contents('http://informer.gismeteo.ru/xml/15420_1.xml');
              
 
     // Забираем первый блок "FORECAST" из XML выдачи
@@ -60,10 +60,8 @@ function weather(){
     if($temperature[2] > 0) $temperature[2] = "+" .  $temperature[2];
 
     // Формируем блок
-    $weatherBlock = '<span id="gradus">'  . $temperature[2] . '...' . $temperature[1] . ' °C </span>'
-                  . '<div class="weather">' 
-                  . '   <img id="weather1" alt="" src="' . $imgs[$imgId[1]] . '">'
-                  . '</div>';
+    $weatherBlock = '   <img id="weather1" alt="" src="' . $imgs[$imgId[1]] . '">'
+                  . '<span id="weather">'  . $temperature[2] . '...' . $temperature[1] . ' °C Бухарест</span>';
                  
 
     // Вывод

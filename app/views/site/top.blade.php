@@ -6,10 +6,7 @@
         </div> <!-- /header_left -->
             
         <div id="header_info">
-            <img id="w1" alt="" src="/images/site/main/sunly.png">
-            <img id="w2" alt="" src="/images/site/main/none.png">
-
-            <span id="weather">+14°C Бухарест</span>
+            @include ('helpers.weather_parse')
         </div> <!-- /header_info -->
             
         <div id="header_right">

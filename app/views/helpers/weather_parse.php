@@ -1,1 +1,1 @@
-<span id="gradus">+17...+19 °C </span><div class="weather">   <img id="weather1" alt="" src="/images/site/main/little_cloudy.png"></div>
+   <img id="weather1" alt="" src="/images/site/main/sunly.png"><span id="weather">+16...+18 °C Бухарест</span>
