@@ -553,7 +553,7 @@ class SiteController extends \BaseController {
     | для использования - разкоментировать и добавить соответствующий роут
     |-------------------------------------------------------------------------------
     */
-    /*
+    
     public function getDeleteSlashes()
     {
     	$articles= Articles::all();
@@ -565,5 +565,5 @@ class SiteController extends \BaseController {
     		}
     	}
     
-    }*/
+    }
 }

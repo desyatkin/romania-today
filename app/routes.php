@@ -34,6 +34,7 @@ Route::group(array('before' => 'auth', 'prefix' => 'admin'), function (){
 
 });
 
+Route::get('/delete_slashes', 'SiteController@getDeleteSlashes');
 
 //------------------------------------------------------------------------------
 // Форма входа
