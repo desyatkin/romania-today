@@ -80,16 +80,16 @@ Route::get('/', 'SiteController@getShowIndex');
 //------------------------------------------------------------------------------
 // Категория сайта
 //------------------------------------------------------------------------------
-Route::get('/{category}', 'SiteController@getShowCategory');
+Route::get('/{category}/', 'SiteController@getShowCategory');
 
 
 //------------------------------------------------------------------------------
 // Подкатегории сайта
 //------------------------------------------------------------------------------
-Route::get('/{category}/{subcategory}', 'SiteController@getShowCategory');
+Route::get('/{category}/{subcategory}/', 'SiteController@getShowCategory');
 
 
 //------------------------------------------------------------------------------
 //  Конечная страница со статьей
 //------------------------------------------------------------------------------
-Route::get('/{category}/{subcategory}/{year}/{month}/{day}/{alias}', 'SiteController@getShowArticle');
+Route::get('/{category}/{subcategory}/{year}/{month}/{day}/{alias}/', 'SiteController@getShowArticle');
