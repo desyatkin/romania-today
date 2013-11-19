@@ -61,8 +61,9 @@ class SiteController extends \BaseController {
 
         // Проверяем не являтся ли данная категория исключением,
         // (обрабатывется другой функцией и имеет другой шаблон)
-        if ( $category == 'informacija-o-strane' ||
-             $category == 'turistu') {
+        if ( $category == 'informacija-o-strane' or
+             $category == 'turistu'              or
+             $category == 'pages') {
             return $this->getShowException($category, $subcategory);
         }
 

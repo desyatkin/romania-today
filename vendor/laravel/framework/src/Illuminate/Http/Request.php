@@ -47,7 +47,7 @@ class Request extends SymfonyRequest {
 	 */
 	public function url()
 	{
-		return rtrim(preg_replace('/\?.*/', '', $this->getUri()), '/') . '/';
+		return rtrim(preg_replace('/\?.*/', '', $this->getUri()), '/');
 	}	
 
 	/**

@@ -204,7 +204,7 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
 		
 		if ($path != '/' and !ends_with($path, '/') and !ends_with($path, '//'))
 		{
-			with(new SymfonyRedirect($this['request']->fullUrl(), 301))->send();
+			with(new SymfonyRedirect($this['request']->fullUrl() . '/', 301))->send();
 
 			exit;
 		}

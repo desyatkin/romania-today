@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'romania_today',
-			'username'  => 'root',
-			'password'  => 'root',
+			'database'  => 'romania_today1',
+			'username'  => 'romania',
+			'password'  => 'Rohp8piBah7tie8ubexi',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
