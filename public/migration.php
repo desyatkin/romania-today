@@ -5,9 +5,9 @@ error_reporting(E_ALL);
 /*
  * connect to mysql
  */
-$productionMysql = new mysqli('romania-today.ru.wpdev', 'wpdev', 'ghbdtnghbdtn', 'romania-today');
+$productionMysql = new mysqli('romania-today.ru.wpdev', 'wpdev', 'ghbdtnghbdtn', 'romania_today');
 $productionMysql->set_charset('cp1251');
-$testMysql = new mysqli('localhost', 'root', 'root', 'romania-today');
+$testMysql = new mysqli('localhost', 'root', 'root', 'romania_today');
 $testMysql->set_charset('utf8');
 
 /*
