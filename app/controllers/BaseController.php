@@ -49,6 +49,7 @@ class BaseController extends Controller {
 		$filename        = str_random(30);
 		$imagePath       = $destinationPath . $filename . '.' . $extension;
 		$previewPath	 = $destinationPath . 'preview_' . $filename . '.' . $extension;
+
 		$upload_success  = Image::make( Input::file($fieldName)->getRealPath() )
 										->resize(1000, null, true)
 										->save($imagePath);
